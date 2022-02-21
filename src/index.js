@@ -25,7 +25,7 @@ import save from './save';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType('riftz/block', {
+registerBlockType( 'riftz/block', {
 	/**
 	 *  Built-in attributes
 	 */ 
@@ -38,9 +38,9 @@ registerBlockType('riftz/block', {
 	 * @see ./edit.js
 	 */
 	edit: Edit,
-	
+
 	/**
 	 * @see ./save.js
 	 */
 	save,
-});
+} );
