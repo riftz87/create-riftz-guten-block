@@ -7,7 +7,7 @@ const fs = require('fs');
 if (process.argv.length < 3) {
     console.log('You have to provide a name to your block.');
     console.log('For example :');
-    console.log('    npx create-my-boilerplate my-block');
+    console.log('    npx create-riftz-guten-block my-block');
     process.exit(1);
 }
 
@@ -18,10 +18,12 @@ const git_repo = 'https://github.com/riftz87/create-riftz-gutenberg-block.git';
 
 try {
     fs.mkdirSync(projectPath);
-} catch (err) {
+} 
+catch (err) {
     if (err.code === 'EEXIST') {
       console.log(`The file ${projectName} already exist in the current directory, please give it another name.`);
-    } else {
+    } 
+    else {
       console.log(error);
     }
     process.exit(1);
@@ -38,8 +40,9 @@ async function main() {
       console.log('Installing dependencies...');
       execSync('npm install');
 
-      console.log('Done.');
-    } catch (error) {
+      console.log('%cDone.', 'color: lime');
+    } 
+    catch (error) {
       console.log(error);
     }
 }
