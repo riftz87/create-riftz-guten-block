@@ -26,22 +26,21 @@ import save from './save';
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 registerBlockType('riftz/block', {
-    /**
-     *  Built-in attributes
-     */ 
-    title: 'Riftz Block',
-    description: 'Sample Gutenberg block',
-    icon: 'layout',
-    category: 'widgets',
+	/**
+	 *  Built-in attributes
+	 */ 
+	title: 'Riftz Block',
+	description: 'Sample Gutenberg block',
+	icon: 'layout',
+	category: 'widgets',
 
-    /**
-     * @see ./edit.js
-     */
-    edit: Edit,
-    
-    /**
-     * @see ./save.js
-     */
-    save,
+	/**
+	 * @see ./edit.js
+	 */
+	edit: Edit,
+	
+	/**
+	 * @see ./save.js
+	 */
+	save,
 });
- 
