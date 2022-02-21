@@ -13,13 +13,13 @@ import { registerBlockType } from '@wordpress/blocks';
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import './style.scss';
- 
+
 /**
  * Internal dependencies
  */
 import Edit from './edit';
 import save from './save';
- 
+
 /**
  * Every block starts by registering a new block type definition.
  *
@@ -29,19 +29,19 @@ registerBlockType('riftz/block', {
     /**
      *  Built-in attributes
      */ 
-    title: "Riftz Block",
-    description: "Sample Gutenberg block",
-    icon: "layout",
-    category: "widgets",
+    title: 'Riftz Block',
+    description: 'Sample Gutenberg block',
+    icon: 'layout',
+    category: 'widgets',
 
     /**
      * @see ./edit.js
      */
     edit: Edit,
- 
+    
     /**
      * @see ./save.js
      */
     save,
- });
+});
  
