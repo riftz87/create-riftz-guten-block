@@ -30,12 +30,9 @@ try {
 async function main() {
     try {
       console.log('Downloading files...');
-      execSync(`git clone --depth=1 ${git_repo} ${projectPath}`);
+      execSync(`git clone --depth=1 ${git_repo} ${projectPath} && rm -rf ${projectPath}/.git`);
 
       process.chdir(projectPath);
-
-      console.log('Removing .git');
-      execSync('rm -rf .git');
 
       console.log('Installing dependencies...');
       execSync('npm install');
