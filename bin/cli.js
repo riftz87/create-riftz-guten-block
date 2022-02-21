@@ -32,7 +32,7 @@ async function main() {
       console.log('Downloading files...');
       execSync(`git clone --depth=1 ${git_repo} ${projectPath}`);
 
-      fs.rmdirSync(`${projectPath}/.git`, { recursive: true });
+      fs.rmSync(`${projectPath}/.git`, { recursive: true });
       process.chdir(projectPath);
 
       console.log('Installing dependencies...');
