@@ -20,12 +20,14 @@ import './style.scss';
 import Edit from './edit';
 import save from './save';
 
+const namespace = 'riftz/block';
+
 /**
  * Every block starts by registering a new block type definition.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType( 'riftz/block', {
+registerBlockType( namespace, {
 	/**
 	 *  Built-in attributes
 	 */
