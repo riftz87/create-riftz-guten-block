@@ -1,0 +1,23 @@
+{
+  "name": "create-riftz-gutenberg-block",
+  "version": "0.1.0",
+  "description": "Boilerplate for creating a WordPress Gutenberg block",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+		"start": "wp-scripts start"
+  },
+  "keywords": [
+    "boilerplate",
+    "gutenberg",
+    "block"
+  ],
+  "author": "Fritz Ramirez",
+  "license": "ISC",
+  "bin": {
+    "create-boilerplate": "./bin/cli.js"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^21.0.2"
+  }
+}
