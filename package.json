@@ -1,5 +1,5 @@
 {
-  "name": "create-riftz-gutenberg-block",
+  "name": "create-riftz-guten-block",
   "version": "0.1.0",
   "description": "Boilerplate for creating a WordPress Gutenberg block",
   "main": "index.js",
