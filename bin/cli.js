@@ -40,7 +40,7 @@ async function main() {
       console.log('Installing dependencies...');
       execSync('npm install');
 
-      console.log("\u001b[1;32m Done. \u001b[0m");
+      console.log("\u001b[1;32m Done." + "\u001b[0m");
     } 
     catch (error) {
       console.log(error);
