@@ -32,7 +32,7 @@ async function main() {
       console.log('Downloading files...');
       execSync(`git clone --depth=1 ${git_repo} ${projectPath}`);
 
-      fs.unlink(`${projectPath}/.git`);
+      fs.unlinkSync(`${projectPath}/.git`);
       process.chdir(projectPath);
 
       console.log('Installing dependencies...');
