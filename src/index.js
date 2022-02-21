@@ -28,7 +28,7 @@ import save from './save';
 registerBlockType( 'riftz/block', {
 	/**
 	 *  Built-in attributes
-	 */ 
+	 */
 	title: 'Riftz Block',
 	description: 'Sample Gutenberg block',
 	icon: 'layout',
