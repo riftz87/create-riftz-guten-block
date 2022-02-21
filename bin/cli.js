@@ -14,7 +14,7 @@ if (process.argv.length < 3) {
 const projectName = process.argv[2];
 const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName);
-const git_repo = '';
+const git_repo = 'https://github.com/riftz87/create-riftz-gutenberg-block.git';
 
 try {
     fs.mkdirSync(projectPath);
@@ -36,6 +36,8 @@ async function main() {
 
       console.log('Installing dependencies...');
       execSync('npm install');
+
+      console.log('Done.');
     } catch (error) {
       console.log(error);
     }
