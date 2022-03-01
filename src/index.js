@@ -19,6 +19,7 @@ import './style.scss';
  */
 import Edit from './edit';
 import save from './save';
+import attributes from './attributes';
 
 const namespace = 'riftz/block';
 
@@ -35,6 +36,11 @@ registerBlockType( namespace, {
 	description: 'Sample Gutenberg block',
 	icon: 'layout',
 	category: 'widgets',
+
+	/**
+	 *  Custom attributes
+	 */
+	attributes,
 
 	/**
 	 * @see ./edit.js
